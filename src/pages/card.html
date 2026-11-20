@@ -1,0 +1,26 @@
+<div class="tool-page">
+<h1>요구사항 카드 작성기</h1>
+<p class="intro">카드의 항목을 채우면 AI에 그대로 붙여 넣을 문장이 아래에 만들어진다. 입력한 내용은 이 기기의 브라우저에만 저장된다.</p>
+
+<section class="panel">
+  <h2>요구사항 카드</h2>
+  <div class="btns">
+    <button type="button" class="btn" data-preset="example">예시 불러오기([[표 3-2@ch03]])</button>
+    <button type="button" class="btn" data-preset="clear">모두 지우기</button>
+  </div>
+  <label class="field"><span>목표<small>만들 기능을 한 문장으로</small></span><textarea data-k="goal" rows="2"></textarea></label>
+  <label class="field"><span>입력<small>부품과 핀 번호</small></span><textarea data-k="input" rows="2"></textarea></label>
+  <label class="field"><span>출력<small>부품과 핀 번호</small></span><textarea data-k="output" rows="2"></textarea></label>
+  <label class="field"><span>동작 규칙<small>시간과 횟수는 숫자로</small></span><textarea data-k="rule" rows="4"></textarea></label>
+  <label class="field"><span>조건<small>보드, 언어, 코드 작성 방식</small></span><textarea data-k="cond" rows="3"></textarea></label>
+  <label class="field"><span>확인 방법<small>무엇을 측정하여 어떤 기준으로 판정할지</small></span><textarea data-k="check" rows="2"></textarea></label>
+  <label class="check"><input type="checkbox" id="plan-first" checked> 코드를 쓰기 전에 계획부터 설명하게 한다</label>
+
+  <h2 style="margin-top:22px">AI에 붙여 넣을 문장</h2>
+  <textarea class="out-box" id="card-out" readonly aria-label="AI에 붙여 넣을 문장"></textarea>
+  <div class="btns">
+    <button type="button" class="btn primary" id="copy-card">문장 복사</button>
+    <a class="btn" href="https://gemini.google.com/" target="_blank" rel="noopener">Gemini 열기</a>
+  </div>
+</section>
+</div>

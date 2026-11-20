@@ -1,0 +1,22 @@
+<div class="tool-page">
+<h1>미니카 3D 모델</h1>
+<p class="intro">마우스나 손가락으로 모델을 돌려 보고, 부품을 눌러 이름을 확인한다. 분해 정도를 높이면 부품이 떨어져 조립 순서를 보기 쉽다([[7장]], [[9장]]).</p>
+<div class="viewer-wrap">
+  <canvas id="viewer" aria-label="미니카 3D 모델"></canvas>
+  <div class="viewer-msg" id="viewer-msg">모델을 불러오는 중이다.</div>
+</div>
+<div class="viewer-ui">
+  <p class="part-name" id="part-name" aria-live="polite">부품을 누르면 이름이 나타난다.</p>
+  <label class="field"><span>분해 정도</span><input type="range" id="explode" min="0" max="100" value="0"></label>
+</div>
+<section class="panel">
+  <h2>3D 출력물 파일</h2>
+  <p class="desc">슬라이싱 프로그램에서 열어 층과 출력 방향을 확인할 수 있다.</p>
+  <ul class="dl-list">
+    <li><a class="btn" href="/assets/model/tray.stl" download>전장 트레이</a></li>
+    <li><a class="btn" href="/assets/model/dashboard.stl" download>대시보드</a></li>
+    <li><a class="btn" href="/assets/model/rear_pod.stl" download>후면 포드</a></li>
+    <li><a class="btn" href="/assets/model/front_pod.stl" download>전면 포드</a></li>
+  </ul>
+</section>
+</div>

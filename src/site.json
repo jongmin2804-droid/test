@@ -1,0 +1,41 @@
+{
+  "title": "전장제어교육",
+  "kicker": "자동차 전장 제어 실습",
+  "subtitle": "아두이노와 AI로 만드는 자동차 전장 미니카",
+  "description": "Arduino Uno를 ECU로 삼아 등화·안전·구동 장치를 하나씩 만들고, 3D 프린팅 부품을 단 미니카 한 대로 통합한다.",
+  "hero_image": "assets/img/minicar_render.webp",
+  "hero_alt": "전장 미니카 렌더링",
+  "hero_links": { "표준 핀맵": "/appendix-a" },
+
+  "chapters": [
+    { "slug": "ch01", "no": "1",  "title": "자동차 전장의 구성",         "file": "ch01.md" },
+    { "slug": "ch02", "no": "2",  "title": "전기 기초와 아두이노",       "file": "ch02.md" },
+    { "slug": "ch03", "no": "3",  "title": "AI 코딩과 방향지시등",       "file": "ch03.md" },
+    { "slug": "ch04", "no": "4",  "title": "브레이크등과 오토라이트",    "file": "ch04.md" },
+    { "slug": "ch05", "no": "5",  "title": "후방감지 장치",              "file": "ch05.md" },
+    { "slug": "ch06", "no": "6",  "title": "모터 제어",                  "file": "ch06.md" },
+    { "slug": "ch07", "no": "7",  "title": "3D 프린팅 차체와 섀시 조립", "file": "ch07.md" },
+    { "slug": "ch08", "no": "8",  "title": "릴레이와 배선 하네스",       "file": "ch08.md" },
+    { "slug": "ch09", "no": "9",  "title": "전장 장착과 배선",           "file": "ch09.md" },
+    { "slug": "ch10", "no": "10", "title": "통합 코드 작성",             "file": "ch10.md" },
+    { "slug": "ch11", "no": "11", "title": "디버깅과 기능 판정",         "file": "ch11.md" },
+    { "slug": "ch12", "no": "12", "title": "LCD 계기판",                 "file": "ch12.md" },
+    { "slug": "ch13", "no": "13", "title": "고장 진단",                  "file": "ch13.md" },
+    { "slug": "appendix-a", "no": "A", "title": "표준 핀맵과 배선",      "file": "appendix-a.md" }
+  ],
+
+  "tools": [
+    { "slug": "card",  "title": "요구사항 카드 작성기", "file": "card.html",
+      "desc": "카드 여섯 항목을 채워 AI에 붙여 넣을 문장을 만든다.",
+      "scripts": ["/assets/js/card.js"] },
+    { "slug": "calc",  "title": "계산기", "file": "calc.html",
+      "desc": "LED 전류, 점멸 주기, 초음파 거리, PWM을 계산한다.",
+      "scripts": ["/assets/js/calc.js"] },
+    { "slug": "model", "title": "미니카 3D 모델", "file": "model.html",
+      "desc": "미니카 조립 모델을 돌려 보고 부품의 위치를 확인한다.",
+      "head": "<script type=\"importmap\">{\"imports\":{\"three\":\"/assets/vendor/three/three.module.min.js\",\"three/addons/\":\"/assets/vendor/three/addons/\"}}</script>",
+      "scripts": ["module:/assets/js/model.js"] },
+    { "slug": "app",   "title": "제어 앱", "file": "app.html",
+      "desc": "미니카를 조작하는 안드로이드 앱의 설치, 연결 방법과 통신 규약을 안내한다." }
+  ]
+}
